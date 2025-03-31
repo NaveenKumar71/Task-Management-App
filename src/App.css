@@ -1,0 +1,185 @@
+/* Define default (light mode) variables */
+:root {
+  --background-color: #f8f9fa;
+  --container-bg: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --card-bg: #ffffff;
+  --card-header-bg: #f1f1f1;
+  --card-footer-bg: #f1f1f1;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+  --background-color: #121212;
+  --container-bg: #1e1e1e;
+  --text-color: #8e44ad;
+  --text-color1: #fffefe;
+  --primary-color: #8e44ad;  /* rich purple */
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --success-color: #27ae60;
+  --card-bg: #1e1e1e;
+  --card-header-bg: #2c2c2c;
+  --card-footer-bg: #2c2c2c;
+}
+.dark-mode .form-select {
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.dark-mode .form-select option {
+  background-color: var(--container-bg);
+  color: var(--text-color);
+}
+.dark-mode label {
+  color: var(--text-color) !important;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-image: url('https://media.istockphoto.com/id/1279502184/photo/project-management-concept-with-gantt-chart.jpg?s=612x612&w=0&k=20&c=cyH6eJgMjZPuhYwCp1mc334Y3EOngkPAibyBBokJ7To='); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container styling for the main app area */
+.container {
+  background-color: var(--container-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease;
+}
+
+/* Header & Logo */
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.logo-task {
+  color: var(--primary-color);
+}
+
+.logo-management {
+  color: var(--warning-color);
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 25px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--container-bg);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: var(--card-header-bg);
+  border-bottom: 1px solid var(--text-color);
+  padding: 10px 15px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-body {
+  padding: 15px;
+  color: var(--text-color);
+}
+
+.card-footer {
+  background-color: var(--card-footer-bg);
+  border-top: 1px solid var(--text-color);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Task Item Hover & Transition */
+.task-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+/* Form Styles */
+form.card {
+  margin-bottom: 20px;
+}
+
+/* Utility Classes */
+.text-muted {
+  font-size: 0.85rem;
+}
+
+/* Additional spacing if needed */
